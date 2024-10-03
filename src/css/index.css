@@ -1,0 +1,43 @@
+.fondo-body{
+    background: white;
+}
+
+.margen-carrusel {
+    margin-top: 80px;
+}
+
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+/* Media Queries */
+/*(phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Your CSS rules for phones */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your CSS rules for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your CSS rules for tablets */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Your CSS rules for large devices */
+    .c-item{
+        height: 500px;
+    }
+}
