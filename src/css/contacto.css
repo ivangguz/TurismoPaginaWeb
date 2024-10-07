@@ -142,3 +142,11 @@
     padding-bottom: 3rem !important;
 }
 
+/* Change the outline and border color to #f70759 when input is focused */
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline-color: #f70759 !important;  /* Custom outline color */
+    border-color: #f70759 !important;   /*Ensure border color matches*/
+    box-shadow: 0 0 5px rgba(247, 7, 89, 0.8) !important; /* Optional shadow effect */
+}
