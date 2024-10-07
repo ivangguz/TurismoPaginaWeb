@@ -1,11 +1,6 @@
 .navbar{
-    background-color: #fff;
+    background-color: #f70759;
     height: 80px;
-    /* Esto hace que el navbar tenga un borde como cuadrado
-    */
-    /* margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem; */
 }
 
 .navbar-brand {
@@ -16,8 +11,8 @@
 }
 
 .boton-llamada{
-    background-color: #009970;
-    color: #fff;
+    background-color: white;
+    color: #000;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
@@ -26,7 +21,7 @@
 }
 
 .boton-llamada:hover {
-    background-color: #00b383;
+    background-color: #FFC107;
 }
 
 .navbar-toggle{
@@ -40,13 +35,13 @@
 }
 
 .nav-link{
-    color: #666777;
+    color: white;
     font-weight: 500;
     position: relative;
 }
 
 .nav-link:hover, .nav-link.active{
-    color: #000;
+    color: white;
 }
 
 @media (min-width: 991px) {
@@ -58,7 +53,7 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #009970;
+        background-color: #FFC107;
         opacity: 0;
         transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition width and opacity */
       }
@@ -106,4 +101,20 @@
 
 .hero-section h2{
     font-size: 1.2rem;
+}
+
+.margen-para-header{
+    margin-top: 80px;
+}
+
+.dropshadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.offcanvas {
+    background-color: #f70759;
 }

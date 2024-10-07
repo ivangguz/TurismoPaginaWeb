@@ -4,54 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo</title>
+    <!-- Link de bootstrap sin CDN CSS-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/index.css">
+    <!-- Link de Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Links de archivos creados -->
     <link rel="stylesheet" href="./src/css/card.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+  
 
 </head>
 <body class="fondo-body">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand me-auto" href="#">Logo</a>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Calendario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="#">Destinos Destacados</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorias
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Service 1</a></li>
-                    <li><a class="dropdown-item" href="#">Service 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Contacto</a>
-                </li>
-              </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg fixed-top dropshadow-sm">
+      <div class="container">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img class="bi" width="40" height="32" role="img" src="./public/logos/logo_principal.png" aria-label="Bootstrap"></img>
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <a href="#" class="boton-llamada">222-2222-222</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Calendario</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Destinos Destacados</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Service 1</a></li>
+                  <li><a class="dropdown-item" href="#">Service 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
+        <a href="#" class="boton-llamada" √>222-2222-222</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
     <!-- Hero Section -->
     <section>
         <div id="carouselExampleCaptions" class="carousel slide margen-carrusel">
@@ -62,45 +69,55 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active c-item">
-                <img src="./public/fotos/landscape2.jpg" 
-                class="d-block w-100 c-img" alt="...">
+                <video src="./public/videos/concierto2.mp4" 
+                       class="d-block w-100 c-img" 
+                       alt="..." 
+                       controls 
+                       autoplay 
+                       loop 
+                       muted>
+                </video>
                 <div class="carousel-caption top-0 mt-4">
-                  <p class="text-uppercase fs-3 mt-5">Discover the hidden world</p>
-                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
-                  <button 
-                      class="btn btn-primary px-4 py-2 fs-5 mt-5" 
-                      data-bs-toggle="modal"
-                      data-bs-target="#booking-modal">
-                      Book a Tour
-                  </button>
+                    <p class="text-uppercase fs-3 mt-5">experimenta los mejores conciertos del mundo</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">TECATE COMUNA</h1>
+                    <a class="btn btn-warning px-4 py-2 fs-5 mt-5" href="#">
+                        Comprar Boletos
+                    </a>
+                </div>
+            </div>
+            
+              <div class="carousel-item c-item">
+                <video src="./public/videos/naturaleza.mp4" 
+                       class="d-block w-100 c-img" 
+                       alt="..." 
+                       controls 
+                       autoplay 
+                       loop 
+                       muted>
+                </video>
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">vive la naturaleza en su máximo esplendor</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">TOURS EN VOLCANES</h1>
+                    <a class="btn btn-warning px-4 py-2 fs-5 mt-5" href="#">
+                        Comprar Boletos
+                    </a>
                 </div>
               </div>
-              <div class="carousel-item active c-item">
-                <img src="./public/fotos/landscape3.jpg" 
-                class="d-block w-100 c-img" alt="...">
+              <div class="carousel-item c-item">
+                <video src="./public/videos/deportes.mp4" 
+                       class="d-block w-100 c-img" 
+                       alt="..." 
+                       controls 
+                       autoplay 
+                       loop 
+                       muted>
+                </video>
                 <div class="carousel-caption top-0 mt-4">
-                  <p class="text-uppercase fs-3 mt-5">Discover the hidden world</p>
-                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
-                  <button 
-                      class="btn btn-primary px-4 py-2 fs-5 mt-5" 
-                      data-bs-toggle="modal"
-                      data-bs-target="#booking-modal">
-                      Book a Tour
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item active c-item">
-                <img src="./public/fotos/landscape5.jpg" 
-                class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption top-0 mt-4">
-                  <p class="text-uppercase fs-3 mt-5">Discover the hidden world</p>
-                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
-                  <button 
-                      class="btn btn-primary px-4 py-2 fs-5 mt-5" 
-                      data-bs-toggle="modal"
-                      data-bs-target="#booking-modal">
-                      Book a Tour
-                  </button>
+                    <p class="text-uppercase fs-3 mt-5">los mejores partidos del futbol mexicano</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">ESTADIO AKRON</h1>
+                    <a class="btn btn-warning px-4 py-2 fs-5 mt-5" href="#">
+                        Comprar Boletos
+                    </a>
                 </div>
               </div>
             </div>
@@ -112,126 +129,287 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </section>
 
     <!-- Texto y Tarjetas -->
      <section>
-      <div class="container my-5">
-        <h1>Texto de los temas</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate voluptas repellat, nihil adipisci dolor vel 
-          repudiandae harum ad necessitatibus laborum, soluta cupiditate sapiente id at. Aut, aliquam rerum pariatur nihil 
-          soluta et magnam repellat, corporis ullam magni recusandae, libero vitae quos? Laborum vel aut qui, modi atque 
-          possimus aperiam, temporibus accusantium inventore laudantium nostrum ea, dolore perferendis odit minima non 
-          magni commodi quas. Quaerat id laborum error consequatur praesentium reiciendis sed, cumque molestiae totam quidem,
-           numquam saepe excepturi sint repellendus.
-        </p>
-
-        <section class="">
-          <div class="container py-2">
-              <div class="h1 text-center text-dark" id="pageHeaderTitle">My Cards Light</div>
-              <!-- Tarjeta Uno -->
-              <article class="postcard light blue">
-                  <a class="postcard__img_link" href="#">
-                      <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
-                  </a>
-                  <div class="postcard__text t-dark">
-                      <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
-                      <div class="postcard__subtitle small">
-                          <time datetime="2020-05-25 12:00:00">
-                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                          </time>
-                      </div>
-                      <div class="postcard__bar"></div>
-                      <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                      <ul class="postcard__tagbox">
-                          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                          <li class="tag__item play blue">
-                              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                          </li>
-                      </ul>
-                  </div>
-              </article>
-              <!-- Tarjeta Dos -->
-              <article class="postcard light red">
-                  <a class="postcard__img_link" href="#">
-                      <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
-                  </a>
-                  <div class="postcard__text t-dark">
-                      <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
-                      <div class="postcard__subtitle small">
-                          <time datetime="2020-05-25 12:00:00">
-                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                          </time>
-                      </div>
-                      <div class="postcard__bar"></div>
-                      <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                      <ul class="postcard__tagbox">
-                          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                          <li class="tag__item play red">
-                              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                          </li>
-                      </ul>
-                  </div>
-              </article>
-              <!-- Tarjeta Tres -->
-              <article class="postcard light green">
-                  <a class="postcard__img_link" href="#">
-                      <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
-                  </a>
-                  <div class="postcard__text t-dark">
-                      <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
-                      <div class="postcard__subtitle small">
-                          <time datetime="2020-05-25 12:00:00">
-                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                          </time>
-                      </div>
-                      <div class="postcard__bar"></div>
-                      <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                      <ul class="postcard__tagbox">
-                          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                          <li class="tag__item play green">
-                              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                          </li>
-                      </ul>
-                  </div>
-              </article>
-              <!-- Tarketa Cuatro -->
-              <article class="postcard light yellow">
-                  <a class="postcard__img_link" href="#">
-                      <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
-                  </a>
-                  <div class="postcard__text t-dark">
-                      <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
-                      <div class="postcard__subtitle small">
-                          <time datetime="2020-05-25 12:00:00">
-                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                          </time>
-                      </div>
-                      <div class="postcard__bar"></div>
-                      <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-                      <ul class="postcard__tagbox">
-                          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                          <li class="tag__item play yellow">
-                              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                          </li>
-                      </ul>
-                  </div>
-              </article>
+      <div>
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">Titulo sobre las diferentes clases que hay</h1>
+            <p class="col-lg-12 col-md-12 mx-auto lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque numquam magnam obcaecati facere suscipit soluta non sequi rerum debitis, minima tempore ut, blanditiis nostrum dolore, ipsa ipsum optio? Soluta, vero id nam repellat itaque, repellendus veritatis tempore harum rerum explicabo officia aliquid possimus assumenda quod quibusdam eum minus accusantium deserunt!
+            </p>
           </div>
-      </section>
-
-
+          <div class="d-flex d-flex-card justify-content-center gap-cards">
+                      <!-- Carta Uno -->
+          <div class="card" style="width: 18rem;">
+            <img src="./public/fotos/landscape3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Naturaleza</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Ver Mas</a>
+            </div>
+          </div>
+          <!-- Carta Dos -->
+          <div class="card" style="width: 18rem;">
+            <img src="./public/fotos/landscape3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Deportes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Ver Mas</a>
+            </div>
+          </div>
+          <!-- Carta Tres -->
+          <div class="card" style="width: 18rem;">
+            <img src="./public/fotos/landscape3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Social</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Ver Mas</a>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
      </section>
-
      <!-- Destinos Destacados -->
+      <section>
+        <div class="container px-4 py-5" id="custom-cards">
+          <h1 class="text-body-emphasis">Destinos Destacados</h2>
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <!-- Carta De Destinos Destacados Uno -->
+               <a href="">
+                <div class="card-destinos card card-cover h-100 overflow-hidden text-bg-dark rounded-4 dropshadow-md" style="background-image: url('./public/fotos/destinos_destacados/cuetzalan.jpg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Parroquia de San Francisco</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./public/logos/logo_social.png" alt="Bootstrap" width="32" height="32" >
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                        </svg>
+                        <small>Cuetzalan, Pue.</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-calendar3 me-2" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                        <small>5d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+               </a>
+            </div>
       
+            <div class="col">
+              <!-- Carta De Destinos Destacados Dos -->
+              <a href="">
+                <div class="card-destinos card card-cover h-100 overflow-hidden text-bg-dark rounded-4 dropshadow-md" style="background-image: url('./public/fotos/destinos_destacados/deportes_akron.jpeg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Estadio Chivas FC</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./public/logos/logo_deportes.png" alt="Bootstrap" width="32" height="32">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                        </svg>
+                        <small>Guadalajara, Jal.</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-calendar3 me-2" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                        <small>10d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <!-- Carta Destinos Destacados Tres -->
+              <a href="">
+                <div class="card-destinos card card-cover h-100 overflow-hidden text-bg-dark rounded-4 dropshadow-md" style="background-image: url('./public/fotos/destinos_destacados/malinche.jpg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">La Malinche</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./public/logos/logo_arbol.png" alt="Bootstrap" width="32" height="32" >
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                        </svg>
+                        <small>Tlaxcala, Tlax.</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-calendar3 me-2" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                        <small>10d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calendario de eventos-->
+      <section>
+        <div>
+          <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-5">
+              <h1 class="text-body-emphasis text-center">Calendario de Eventos</h1>
+              <!-- PRIMERA FECHA DE EVENTOS -->
+              <h2 class="text-body-emphasis text-start border-top pt-2">Jueves 3 de Octubre</h2>
+              <div class="mt-5 mt-4">
+                <!-- Primer Evento -->
+                <div class="card mb-4" style="max-width: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="img-overlay-container">
+                        <img src="./public/fotos/destinos_destacados/deportes_akron.jpeg" class="img-fluid rounded-start" style="background-size: cover;" alt="...">
+                        <div class="overlay-text">
+                          <div class="big-number">8</div>
+                          <div class="small-text">November</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">Chivas VS América FC</h5>
+                        <p class="card-text">El Clásico Nacional, Chivas de Guadalajara contra el América FC, es uno de los enfrentamientos más emocionantes y esperados del fútbol mexicano. Este partido enfrenta a los dos equipos más populares y exitosos del país.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="card-text mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                            </svg>
+                            <small class="text-body-secondary">Guadalajara, Jalisco.</small>  
+                          </p>
+                          <a href="" class="btn btn-warning">Ver Más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Segundo Evento -->
+                <div class="card mb-4" style="max-width: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="img-overlay-container">
+                        <img src="./public/fotos/destinos_destacados/deportes_akron.jpeg" class="img-fluid rounded-start" style="background-size: cover;" alt="...">
+                        <div class="overlay-text">
+                          <div class="big-number">8</div>
+                          <div class="small-text">November</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">Chivas VS América FC</h5>
+                        <p class="card-text">El Clásico Nacional, Chivas de Guadalajara contra el América FC, es uno de los enfrentamientos más emocionantes y esperados del fútbol mexicano. Este partido enfrenta a los dos equipos más populares y exitosos del país.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="card-text mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                            </svg>
+                            <small class="text-body-secondary">Guadalajara, Jalisco.</small>  
+                          </p>
+                          <a href="" class="btn btn-warning">Ver Más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SEGUNDA FECHA DE EVENTOS -->
+              <h2 class="text-body-emphasis text-start border-top pt-2 mt-5">Domingo 15 de Noviembre</h2>
+              <div class="mt-5">
+                <!-- Primer Evento -->
+                <div class="card mb-4" style="max-width: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="img-overlay-container">
+                        <img src="./public/fotos/destinos_destacados/deportes_akron.jpeg" class="img-fluid rounded-start" style="background-size: cover;" alt="...">
+                        <div class="overlay-text">
+                          <div class="big-number">8</div>
+                          <div class="small-text">November</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">Chivas VS América FC</h5>
+                        <p class="card-text">El Clásico Nacional, Chivas de Guadalajara contra el América FC, es uno de los enfrentamientos más emocionantes y esperados del fútbol mexicano. Este partido enfrenta a los dos equipos más populares y exitosos del país.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="card-text mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                            </svg>
+                            <small class="text-body-secondary">Guadalajara, Jalisco.</small>  
+                          </p>
+                          <a href="" class="btn btn-warning">Ver Más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Segundo Evento -->
+                <div class="card mb-4" style="max-width: 100%;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="img-overlay-container">
+                        <img src="./public/fotos/destinos_destacados/deportes_akron.jpeg" class="img-fluid rounded-start" style="background-size: cover;" alt="...">
+                        <div class="overlay-text">
+                          <div class="big-number">8</div>
+                          <div class="small-text">November</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">Chivas VS América FC</h5>
+                        <p class="card-text">El Clásico Nacional, Chivas de Guadalajara contra el América FC, es uno de los enfrentamientos más emocionantes y esperados del fútbol mexicano. Este partido enfrenta a los dos equipos más populares y exitosos del país.</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="card-text mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill me-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                            </svg>
+                            <small class="text-body-secondary">Guadalajara, Jalisco.</small>  
+                          </p>
+                          <a href="" class="btn btn-warning">Ver Más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TERCER FECHA DE EVENTOS -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Link de bootstrap sin CDN de JS-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Link de iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </body>
 </html>
