@@ -118,3 +118,7 @@
 .offcanvas {
     background-color: #f70759;
 }
+
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #FFC107;
+}

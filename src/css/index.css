@@ -125,6 +125,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .card-destinos:hover {
-    transform: scale(1.035); /* Increase the scale value for a larger hover effect */
-  }
+.card-destinos:hover {
+  transform: scale(1.035); /* Increase the scale value for a larger hover effect */
+}
+
+.text-justify {
+  text-align: justify; /* Justify the text */
+}
