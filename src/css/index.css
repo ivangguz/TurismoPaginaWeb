@@ -132,3 +132,7 @@
 .text-justify {
   text-align: justify; /* Justify the text */
 }
+
+.accordion-button {
+  font-size: 1.5rem;
+}
