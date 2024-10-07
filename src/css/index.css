@@ -87,6 +87,7 @@
     font-size: 5rem; /* Adjust this size as needed */
     line-height: 1;
     transition: font-size 0.3s ease; /* Transition for font size */
+    color: 
   }
 
   /* Smaller font size for "November" */
@@ -135,4 +136,8 @@
 
 .accordion-button {
   font-size: 1.5rem;
+}
+
+.color-rosa{
+  color: #f70759;
 }

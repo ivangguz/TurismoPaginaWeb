@@ -16,20 +16,37 @@ function enviarCorreo(){
   
 function enviarFormulario() {
     // Obtener los valores de los campos del formulario
-    var nombre = document.getElementById('nombre').value;
-    var apellido = document.getElementById('apellido').value;
+    var nombre = document.getElementById('nombre').value.trim();
+    var apellido = document.getElementById('apellido').value.trim();
     var especialidad = document.getElementById('especialidad').value;
-    var descripcion = document.getElementById('descripcion').value;
+    var descripcion = document.getElementById('descripcion').value.trim();
+
+    // Validar que los campos no estén vacíos
+    if (!nombre || !apellido || !especialidad || !descripcion) {
+        // Establecer el mensaje del modal
+        document.getElementById('customAlertMessage').innerHTML = 'Por favor, completa <strong>todos los campos</strong> antes de enviar el mensaje.';
+
+        // Mostrar el modal (requiere Bootstrap JS)
+        var myModal = new bootstrap.Modal(document.getElementById('customAlertModal'));
+        myModal.show();
+        return; // Detener la ejecución si algún campo está vacío
+    }
 
     // Crear el mensaje a enviar
     var mensaje = `Hola, soy ${nombre} ${apellido}. Estoy interesado en ${especialidad}. Descripción: ${descripcion}.`;
 
-    // Reemplazar espacios por %20 para codificar el mensaje correctamente
+    // Codificar el mensaje
     var mensajeCodificado = encodeURIComponent(mensaje);
 
-    // Crear la URL para WhatsApp con el número de teléfono (puedes cambiar el número a tu preferencia)
+    // Crear la URL para WhatsApp con el número de teléfono
     var url = `https://wa.me/2211031410?text=${mensajeCodificado}`;
 
     // Abrir la URL en una nueva ventana
     window.open(url, '_blank');
 }
+
+document.getElementById('popoverButton').addEventListener('click', function () {
+    // Show the modal
+    var myModal = new bootstrap.Modal(document.getElementById('customAlertModal'));
+    myModal.show();
+});

@@ -32,10 +32,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link mx-lg-2" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Calendario</a>
+                <a class="nav-link mx-lg-2" href="./calendario.html">Calendario</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">Destinos Destacados</a>
@@ -50,7 +50,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#">Contacto</a>
+              <a class="nav-link mx-lg-2 active" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -99,11 +99,10 @@
           </div>
           <div class="mb-3">
             <select class="form-select" aria-label="Default select example" id="especialidad">
-              <option selected>Servicios</option>
+              <option selected>Solicitud</option>
               <option value="Cotizacion">Cotizacion</option>
-              <option value="Fotografia">Fotografia</option>
-              <option value="Video">Video</option>
-              <option value="Videoclips">Videoclips</option>
+              <option value="Fotografia">Informacion en General</option>
+              <option value="Video">Fechas Disponibles</option>
               <option value="Paquetes">Paquetes</option>
             </select>
           </div>
@@ -115,7 +114,7 @@
         </form>
       </div>
       <div class="col-lg-4 pe-0 text-center">
-        <h1 class="fw-bold text-body-emphasis lh-1 mb-3">Deja un mensaje en mi WhatsApp y me pondre en contacto contigo en minutos</h1>
+        <h1 class="fw-bold text-body-emphasis lh-1 mb-3">Deja un mensaje en nuestro WhatsApp y nos pondremos en contacto contigo en minutos</h1>
       </div>
     </div>
   </div>
@@ -125,6 +124,27 @@
 <!--INICIO DEL FOOTER-->
 
 <!--FIN DEL FOOTER-->
+
+<!-- ALERTA DE ERROR -->
+ <!-- Custom Alert Modal -->
+<div class="modal fade" id="customAlertModal" tabindex="-1" aria-labelledby="customAlertLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customAlertLabel">Atención</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Custom message goes here -->
+        <p id="customAlertMessage">Por favor, completa todos los campos antes de enviar el mensaje.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Bootstrap Script -->
 <script
